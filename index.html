@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Taebaek Global Summer School Proposal - Tourmaker</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="2026 Taebaek Global Summer School Proposal">
+    <meta property="og:description" content="No Quebec in Canada, Yes Taebaek in Korea! A stay-type educational tourism project utilizing Taebaek's climate resources">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://indadady.github.io/EnglishCamp_taebaek/">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Hero Background */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .modal-bg {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        /* Animation Utilities */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #10b981; border-radius: 3px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #059669; }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-200 selection:text-emerald-900">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 group">
+                <img id="logo-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII" alt="Tourmaker Logo" class="h-8 md:h-9 object-contain transition-transform group-hover:scale-105">
+            </a>
+            <nav id="nav-links" class="hidden md:flex space-x-8 font-medium text-white/90">
+                <a href="#overview" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Background</a>
+                <a href="#program" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Program</a>
+                <a href="#location" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Infrastructure</a>
+                <a href="#budget" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Budget Strategy</a>
+                <a href="#economy" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Economic Impact</a>
+            </nav>
+            <button onclick="document.getElementById('contact').scrollIntoView()" class="bg-emerald-600 text-white px-6 py-2 rounded-full font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg text-sm flex items-center gap-2">
+                Proposal <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4 relative">
+        <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-slate-50 to-transparent"></div>
+        <div class="max-w-6xl mx-auto z-10 animate-fade-in-up">
+            <span class="inline-block py-1 px-4 rounded-full bg-emerald-600/80 backdrop-blur-sm border border-emerald-400/30 text-sm md:text-base mb-6 tracking-[0.2em] uppercase font-semibold hover:bg-emerald-600 transition cursor-default shadow-lg">
+                2026 Taebaek Global Summer School
+            </span>
+            <h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight text-shadow">
+                No Quebec in Canada,<br>
+                <span class="text-emerald-400">Yes Taebaek</span> in Korea!
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 font-light text-slate-100 max-w-3xl mx-auto leading-relaxed text-shadow bg-black/20 p-4 rounded-xl backdrop-blur-sm">
+                Taebaek's summer is cool, but <strong class="text-emerald-300">Taebaek's economy must be hot.</strong><br>
+                Beyond one-time festivals, we propose <strong class="text-white">stay-type educational tourism</strong> where people stay.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#program" class="bg-white text-emerald-900 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all shadow-xl flex items-center justify-center gap-2 group">
+                    View Core Programs <i data-lucide="arrow-down" class="w-5 h-5 group-hover:translate-y-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section (Why Now?) -->
+    <section id="overview" class="py-20 bg-slate-50 -mt-20 relative z-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Why Taebaek?</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Why Taebaek Now?</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
+                <p class="text-slate-600 text-lg">In the era of climate crisis and local extinction, Taebaek's 'climate resources' are the most certain alternative.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Climate -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="thermometer-snowflake" class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Alternative to Climate Crisis<br><span class="text-blue-600">Cool City Taebaek</span></h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        Decline in learning efficiency due to heatwaves.<br>
+                        Taebaek's summer climate, with an average altitude of 900m and most similar to Quebec, Canada, provides the optimal <strong>Study Efficiency</strong>.
+                    </p>
+                </div>
+
+                <!-- Card 2: Economy -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors">
+                        <i data-lucide="coins" class="w-8 h-8 text-emerald-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Era of High Exchange Rates<br><span class="text-emerald-600">Economic Edu-Model</span></h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        Overseas training costs exceed 10 million won.<br>
+                        In Taebaek, you can experience a global curriculum with verified native directors at <strong>50% of the cost</strong> of overseas training.
+                    </p>
+                </div>
+
+                <!-- Card 3: Population -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors">
+                        <i data-lucide="users" class="w-8 h-8 text-amber-500 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Response to Local Extinction<br><span class="text-amber-500">Stay-type Living Population</span></h3>
+                    <p class="text-slate-500 leading-relaxed">
+                        From passing tourism to <strong>staying life</strong>.<br>
+                        Students and parents stay for more than 2 weeks, creating direct economic effects on the local economy (accommodation, food).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Concept Motif</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Doppelgänger Cities: Quebec & Taebaek</h2>
+                <p class="text-slate-600 text-lg mt-2">"Is this Taebaek or Canada?" The parallel theory of the two cities that inspired the Global Summer School.</p>
+            </div>
+
+            <!-- Visual Comparison Banner -->
+            <div class="mb-12 relative rounded-3xl overflow-hidden shadow-xl">
+                <div class="grid grid-cols-2 h-64 md:h-80 relative">
+                    <!-- Quebec Forest -->
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Quebec Forest" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-bold">🇨🇦 Forest of Quebec</div>
+                    </div>
+                    <!-- Taebaek Forest -->
+                    <div class="relative">
+                        <img src="https://www.gangwon.to/upload/board/BDMAIN03/b15a9100-dd32-42c7-a3b1-a02ba3f6dd94.jpg" alt="Taebaek Birch Forest" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-bold">🇰🇷 Birch Forest of Taebaek</div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-white/90 backdrop-blur-md px-8 py-4 rounded-full shadow-lg text-center">
+                        <p class="text-xl md:text-2xl font-bold text-slate-900 leading-tight">Will you fly for 13 hours?<br><span class="text-emerald-600">Or drive for 3 hours?</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <!-- Quebec Side -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/320px-Flag_of_Canada.svg.png" alt="Canada Flag" class="w-8 h-auto shadow-sm rounded-sm">
+                        <h3 class="text-2xl font-bold text-slate-900">Quebec City, Canada</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        <strong class="text-emerald-700">"Little France in North America"</strong><br>
+                        North America's only walled city and a UNESCO World Heritage Site. A romantic city with developed summer festivals and European street culture in summer.
+                    </p>
+                    <div class="video-container group cursor-pointer" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/G6adw5NakH0?autoplay=1\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
+                        <img src="https://img.youtube.com/vi/G6adw5NakH0/maxresdefault.jpg" alt="Quebec Video Thumbnail" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition">
+                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-xl"><i data-lucide="play" class="w-8 h-8 text-white fill-current ml-1"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taebaek Side -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/320px-Flag_of_South_Korea.svg.png" alt="Korea Flag" class="w-8 h-auto shadow-sm rounded-sm">
+                        <h3 class="text-2xl font-bold text-slate-900">Taebaek City, Korea</h3>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        <strong class="text-blue-700">"Highland City at 900m Altitude"</strong><br>
+                        Boasts a cool climate and exotic scenery even in midsummer. The cabbage fields and wind farm on Maebongsan Mountain are called the Alps of Korea.
+                    </p>
+                    <div class="rounded-xl overflow-hidden h-80 shadow-md md:h-[calc(20rem+1rem+56.25%)]">
+                        <img src="https://www.news1.kr/_next/image?q=75&url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2025%2F7%2F10%2F7387677%2Fhigh.jpg&w=1920" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
+                            <p class="font-bold">Cool Wind Hill, Maebongsan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Program Section -->
+    <section id="program" class="py-20 bg-emerald-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-emerald-400 font-bold tracking-wider text-sm uppercase">1. Core Program</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2">Programs United with the Festival</h2>
+                <p class="text-emerald-200 mt-3">Learning in the classroom leads to experiences at the festival site.</p>
+            </div>
+
+            <!-- Trust Visuals -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-64 border-2 border-emerald-500/30 group">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhJ5Fhx09WxuR9SI-VEk_p_eyw6Ap0l6XDpkxf9EqblZnrw2CqPq4hzTy_3y23a1uaEgjmdOzw6YPRYeQAmw1FT2S8TdvYD9MIHLASEiEy52GJQA6iu36BSCiYqYBKSJyEqSf7AjcdTJumhyq8L-btHV98Ia70fJiAf5JjgSRFDaJKDmWZfQqgDgIpWLkQ" alt="Andy Teaching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <p class="text-white font-bold text-lg">"We teach happily at the children's eye level"</p>
+                        <p class="text-emerald-300 text-sm">General Director Andy's actual class scene</p>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-64 border-2 border-blue-500/30 group">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiw3ZmGjSTXqaAyT4_oJrwGatJz1qYzzZGWc8ejBXNtZYZ24It_TkeeYLZsiXbE1nfTdaowfz6wX-TYc_B0AL5s_CtBue8qyZkcGo5uNu5SfKIiI_AxeSym4vqyK6bWUm-TeS5Y1YIOzsG0HULcyFx9QXRTfqhDAhUlW35sHJF28vDjglO9vNDeeDB66iI" alt="Cubi Global Camp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <p class="text-white font-bold text-lg">"Safely with verified operational know-how"</p>
+                        <p class="text-blue-300 text-sm">Cubi Global overseas camp operation site</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center mb-10 gap-2">
+                <button onclick="switchTab('prog-edu')" id="btn-edu" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-emerald-500 text-white shadow-lg transform scale-105">Weekdays (Education)</button>
+                <button onclick="switchTab('prog-fes')" id="btn-fes" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20">Weekends (Festival)</button>
+                <button onclick="switchTab('prog-fam')" id="btn-fam" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20">Always (Family)</button>
+            </div>
+
+            <!-- Content Area -->
+            <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 md:p-10 border border-white/20 min-h-[300px]">
+                
+                <!-- Weekday (Education) -->
+                <div id="prog-edu" class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-emerald-300 mb-4">📚 Taebaek-Quebec Class</h3>
+                        <p class="text-emerald-100 mb-4 text-sm">We use the same textbooks that Canadian children actually learn, right here in Taebaek.</p>
+                        <ul class="space-y-4 text-lg mb-6">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-emerald-500/20 p-2 rounded-lg"><i data-lucide="book-open" class="w-6 h-6 text-emerald-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">Cultural Class with Andy</strong>
+                                    <span class="text-emerald-200 text-sm">Integrated learning of Canadian history/culture/English</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-emerald-500/20 p-2 rounded-lg"><i data-lucide="mic" class="w-6 h-6 text-emerald-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">Discussion & Presentation (PBL)</strong>
+                                    <span class="text-emerald-200 text-sm">Korean students logically express their thoughts in English</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 h-64">
+                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjDDYbEB8PbSLcNWDXM1fh1-PANMYuMmG7h8uK5LLTDvJ5CJT_vMWdHvpTVt9XnuBNyP9J4aj7bxRxdRCMwPyArXdEjaY9AahnxdrC8pV5WV0yMFWyGd0EAF2wajy7ma0x7wcudmVbwXrX3fiO1EirTbFpqe-EWrc2jv99qdVFVTVzYao5-kFx5oT2G2OY" alt="Classroom Activity" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
+                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEigk4KA11jvZ2BdE98UBjX5ZuBuiZ1i3xrraomNdUEpzye_dp1PXTWk950WN44rC5lUnaFdhKByZC6a7Wiaaa8aYt_EnQGz3TLyzOTc00q2Ys9v8hswqLxPWAo8hDCRqi-P2ibJq44iYlW6fNtkBBWgVk3VSU_dg3asajCCYUFpJMaAwU0tv1V6axRLejo" alt="Student Presentation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekend (Festival) -->
+                <div id="prog-fes" class="hidden grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-blue-300 mb-4">🎉 Global Festival Leader</h3>
+                        <p class="text-blue-100 mb-4 text-sm">Build confidence by using learned English directly at the festival site.</p>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-blue-500/20 p-2 rounded-lg"><i data-lucide="users" class="w-6 h-6 text-blue-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">[Festival Link] Junior Interpretation/Guide Volunteer</strong>
+                                    <span class="text-blue-200 text-sm">Summer school students support guidance and interpretation for foreign visitors</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-blue-500/20 p-2 rounded-lg"><i data-lucide="music" class="w-6 h-6 text-blue-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">[Stage Link] English Musical Performance</strong>
+                                    <span class="text-blue-200 text-sm">Student performance presentation unfolding on the main festival stage</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden h-64 border-2 border-white/20">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgaqIZcuRukUki7byckj6lonutaTdfTmx36pZxkLA1KLlYlrYhc8u5ucooFYbhUdxESvfHpX9AuCy5IywFMV0UHbilIZhZrkS5LiJmTiLkNdytLejuLqUUED9ci0vBdQFFjSOxmZC5tesCQqxRWoTOfj30-4BmNr8fYRejaQVfQVUci46o7ZSBt4ZKTmaM" alt="Festival Activity" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Family (Workation) -->
+                <div id="prog-fam" class="hidden grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-amber-300 mb-4">💻 Mom & Dad Workation</h3>
+                        <p class="text-amber-100 mb-4 text-sm">While the child studies, parents enjoy work and rest in the nature of Taebaek.</p>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-amber-500/20 p-2 rounded-lg"><i data-lucide="wifi" class="w-6 h-6 text-amber-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">Forest Shared Office</strong>
+                                    <span class="text-amber-200 text-sm">Providing work spaces linked to cool forest cafes such as 'Wind Hill'</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-amber-500/20 p-2 rounded-lg"><i data-lucide="map" class="w-6 h-6 text-amber-300"></i></div>
+                                <div>
+                                    <strong class="block text-white">Providing Taebaek Gourmet Map</strong>
+                                    <span class="text-amber-200 text-sm">Inducing local gourmet tours curated by Tourmaker</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 h-64">
+                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
+                            <img src="https://cdn.whistler.com/blog/wp-content/uploads/2018/09/23091531/Blog-Body-Image.jpg" alt="Forest Workation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
+                            <img src="https://i.pinimg.com/236x/08/3b/07/083b0723527f8eadb0e96ba30f3032b3.jpg" alt="Cafe Workation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2주간 커리큘럼 -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">📅 2-Week Curriculum (Example)</h3>
+                <div class="overflow-x-auto rounded-2xl shadow-xl">
+                    <table class="w-full text-sm text-left text-emerald-100">
+                        <thead class="text-xs text-emerald-200 uppercase bg-emerald-800/50">
+                            <tr>
+                                <th scope="col" class="px-4 py-3 text-center">Week</th>
+                                <th scope="col" class="px-4 py-3 text-center">Day</th>
+                                <th scope="col" class="px-4 py-3">Morning (Academic Immersion)</th>
+                                <th scope="col" class="px-4 py-3">Afternoon (Activity & Local)</th>
+                                <th scope="col" class="px-4 py-3">Evening (Community)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 1주차 -->
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td rowspan="5" class="px-4 py-3 text-center font-bold bg-emerald-800/30">Week 1<br>(Adaptation)</td>
+                                <td class="px-4 py-3 text-center font-bold">Mon</td>
+                                <td class="px-4 py-3">[Orientation] Entrance Ceremony, House Assignment</td>
+                                <td class="px-4 py-3">[Campus Tour] Taebaek Basecamp Tour</td>
+                                <td class="px-4 py-3">Welcome Bonfire</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Tue</td>
+                                <td class="px-4 py-3">[Social Studies] Compare Canada vs Taebaek Geography</td>
+                                <td class="px-4 py-3">[PE - Sports] Experience Canada's National Sport 'Hockey'</td>
+                                <td class="px-4 py-3">English Diary Writing & Mentoring</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Wed</td>
+                                <td class="px-4 py-3">[Science] Taebaek's Geology and Fossils (Dinosaur/Coal)</td>
+                                <td class="px-4 py-3">[Field Trip] Taebaek Coal Museum English Mission Tour</td>
+                                <td class="px-4 py-3">Movie Night (Canadian Movie)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Thu</td>
+                                <td class="px-4 py-3">[Art] Canadian Flag & Taebaek Symbol Collage</td>
+                                <td class="px-4 py-3">[Cooking] Making Canadian Snack 'Poutine'</td>
+                                <td class="px-4 py-3">Talent Show Preparation (Group)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-800/50">
+                                <td class="px-4 py-3 text-center font-bold">Fri</td>
+                                <td class="px-4 py-3">[Presentation] Week 1 Project Presentation</td>
+                                <td class="px-4 py-3">[Water Play] Taebaek Valley/Water Park Water Play</td>
+                                <td class="px-4 py-3">BBQ Party</td>
+                            </tr>
+                            <!-- 2주차 -->
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td rowspan="5" class="px-4 py-3 text-center font-bold bg-emerald-800/30">Week 2<br>(Deepening)</td>
+                                <td class="px-4 py-3 text-center font-bold">Mon</td>
+                                <td class="px-4 py-3">[History] Korea and Canada in the World</td>
+                                <td class="px-4 py-3">[Safety Hero] 365 Safe Town English Safety Experience</td>
+                                <td class="px-4 py-3">Star Gazing (Taebaek Star Viewing)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Tue</td>
+                                <td class="px-4 py-3">[Biology] Exploration of Taebaek's Alpine Plants</td>
+                                <td class="px-4 py-3">[Forest Trekking] Geomryongso/Forest Path English Treasure Hunt</td>
+                                <td class="px-4 py-3">Role Playing (Market/Hospital Situation Drama)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Wed</td>
+                                <td class="px-4 py-3">[Music/Drama] Learning English Musical/Pop Songs</td>
+                                <td class="px-4 py-3">[Festival Prep] Taebaek Summer Festival Performance Rehearsal</td>
+                                <td class="px-4 py-3">Mini Quebec Festival (Festival Participation)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
+                                <td class="px-4 py-3 text-center font-bold">Thu</td>
+                                <td class="px-4 py-3">[Global Manners] Global Etiquette & Discussion</td>
+                                <td class="px-4 py-3">[City Tour] Taebaek City Mission (Merchant Interview)</td>
+                                <td class="px-4 py-3">Farewell Party (Completion Ceremony Rehearsal)</td>
+                            </tr>
+                            <tr class="bg-emerald-700/30">
+                                <td class="px-4 py-3 text-center font-bold">Fri</td>
+                                <td class="px-4 py-3">[Graduation] Completion Ceremony (Certificate awarded by Andy)</td>
+                                <td class="px-4 py-3" colspan="2">[Departure] Sharing memories of 2 weeks and returning home</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Location Advantage Section -->
+    <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-12">
+                <span class="text-blue-600 font-bold tracking-wider text-sm uppercase">2. Location Advantage</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">How to utilize Taebaek's unique infrastructure 200%</h2>
+                <p class="text-slate-500 mt-2">Lower costs by utilizing idle public facilities, and add uniqueness with the high-altitude environment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Accommodation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Accommodation Cost Reduction</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Utilization of Public Lodging Facilities</h3>
+                        <p class="text-sm text-slate-600 mb-4">Utilizing <strong>Taebaeksan Minbak Village</strong> and <strong>365 Safe Town accommodation</strong>, which are off-peak in summer, as camp dormitories.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Cost efficiency and increase in city operation revenue</li>
+                            <li>• Cultivating community spirit through group life</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Safety Education" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-2 left-2 bg-amber-500 text-white text-xs px-2 py-1 rounded">Safety + English</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Link with 365 Safe Town</h3>
+                        <p class="text-sm text-slate-600 mb-4">Operating <strong>"English Safety Hero"</strong> program utilizing safety experience facilities as English mission sites.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Korea's only safety-themed English education</li>
+                            <li>• Effect of increasing facility utilization rate</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain Trekking" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute bottom-2 left-2 bg-emerald-600 text-white text-xs px-2 py-1 rounded">Cool Trekking</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Highland Forest Trekking</h3>
+                        <p class="text-sm text-slate-600 mb-4">Learn English in nature while walking on the cool forest paths of Taebaek even in midsummer.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Exploring famous spots such as Geomryongso and Hambaeksan</li>
+                            <li>• Performing English treasure hunt missions in nature</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Budget Strategy Section -->
+    <section id="budget" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">3. Budget Strategy</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">'Conversion' and 'Convergence' of 10% of Festival Budget</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
+                <p class="text-slate-600 text-lg">Use it not as a simple event cost, but as a <strong class="text-emerald-700">residential program budget</strong> that makes the external population live for 2 weeks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Problem -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-red-100 relative group hover:shadow-xl transition">
+                    <div class="absolute -top-5 left-8 bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">AS-IS (Current)</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <i data-lucide="alert-circle" class="w-6 h-6 text-red-500"></i> Limitations of Existing Festival Budget
+                    </h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="x" class="w-3 h-3"></i></span>
+                            <span><strong>One-time Expenditure:</strong> Concentration on volatile costs such as performance fees and stage installation costs</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="clock" class="w-3 h-3"></i></span>
+                            <span><strong>Short Stay:</strong> Performance viewing (2 hours) → 1 meal → Return home</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="trending-down" class="w-3 h-3"></i></span>
+                            <span><strong>Low Trickle-down Effect:</strong> Weak link to accommodation and multi-meal dining within the region</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Solution -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100 relative group hover:shadow-xl transition transform md:-translate-x-4 md:scale-105 z-10">
+                    <div class="absolute -top-5 left-8 bg-emerald-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">TO-BE (Proposal)</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-600"></i> Budget Conversion to Educational Tourism
+                    </h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="check" class="w-3 h-3"></i></span>
+                            <span><strong>Stay-type Budget:</strong> Cost of attracting living population residing for more than 2 weeks</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="zap" class="w-3 h-3"></i></span>
+                            <span><strong>Festival Synergy:</strong> Utilizing student performance presentations as main festival content</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="coins" class="w-3 h-3"></i></span>
+                            <span><strong>Global Zone Operation:</strong> Native instructors operate English experience booths at the festival site</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Economic Analysis Section -->
+    <section id="economy" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">4. Economic Impact Detail</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Economic Analysis: Value Comparison of 30 Million Won</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
+                <p class="text-slate-600 text-lg">Same budget, completely different results. The surest way to distribute the festival budget directly to small business owners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Option A: Singer -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 opacity-80 hover:opacity-100 transition">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold text-slate-600">A. Recruiting 1 Famous Singer Team</h3>
+                        <span class="bg-slate-200 text-slate-600 px-3 py-1 rounded-full text-sm font-bold">Existing Method</span>
+                    </div>
+                    <div class="text-4xl font-bold text-slate-400 mb-2">30 Million KRW</div>
+                    <p class="text-slate-500 text-sm mb-6">Input Budget (Based on casting fee)</p>
+                    
+                    <ul class="space-y-4 text-slate-600 border-t border-slate-200 pt-6">
+                        <li class="flex justify-between">
+                            <span>Stay Time</span>
+                            <span class="font-bold">Average 3 hours</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Major Consumption</span>
+                            <span class="font-bold">Convenience store, snacks (small amount)</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Regional Trickle-down Effect</span>
+                            <span class="font-bold text-red-500">Insignificant (Volatile)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Option B: Summer School -->
+                <div class="bg-white p-8 rounded-3xl border-2 border-emerald-500 shadow-xl transform md:scale-105 z-10">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold text-emerald-800">B. Summer School Operation</h3>
+                        <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-bold">Proposed Method</span>
+                    </div>
+                    <div class="text-4xl font-bold text-emerald-600 mb-2">30 Million KRW</div>
+                    <p class="text-slate-500 text-sm mb-6">Input Budget (Based on operating costs)</p>
+                    
+                    <div class="space-y-4 border-t border-slate-100 pt-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-600">Attracted Personnel</span>
+                            <span class="font-bold text-slate-800">50 households (200 people)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-600">Stay Period</span>
+                            <span class="font-bold text-slate-800">14 days (2 weeks)</span>
+                        </div>
+                        <div class="bg-emerald-50 p-4 rounded-xl space-y-2 mt-2">
+                            <p class="text-sm font-bold text-emerald-800 mb-2">💰 Estimated Direct Consumption</p>
+                            <div class="flex justify-between text-sm text-slate-600">
+                                <span>Accommodation Fee</span>
+                                <span>70 Million KRW</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-slate-600">
+                                <span>Food Expenses (42 meals)</span>
+                                <span>126 Million KRW</span>
+                            </div>
+                            <div class="flex justify-between text-sm text-slate-600">
+                                <span>Experience/Other</span>
+                                <span>50 Million KRW</span>
+                            </div>
+                            <div class="border-t border-emerald-200 pt-2 flex justify-between font-bold text-lg text-emerald-700">
+                                <span>Total Effect</span>
+                                <span>Approx. 250 Million KRW</span>
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-emerald-600 font-bold mt-2">👉 More than 8 times the effect compared to budget input!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section V: Conclusion -->
+    <section class="py-20 bg-slate-900 text-white text-center">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-6">"Proposal for Taebaek City"</h2>
+            <p class="text-xl font-light leading-relaxed text-slate-300 mb-10">
+                This project does not require a huge new budget.<br>
+                Please reinvest a part of the annual festival budget for <strong class="text-white">'future generation education'</strong> and <strong class="text-white">'practical local consumption'</strong>.
+            </p>
+            <p class="text-lg text-emerald-400 font-medium">
+                Tourmaker will combine Taebaek's climate with the global human resource Andy to make<br>
+                Taebaek the <span class="text-white border-b-2 border-emerald-500 pb-1">'hottest English education holy land in Korea'</span> this summer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Creating the Future of Taebaek Together</h2>
+            <p class="text-slate-500 mb-12">Tourmaker will be a reliable partner.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- 대표 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 group-hover:scale-110 transition">
+                        <i data-lucide="user" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Lee Jae-myung</h3>
+                    <p class="text-slate-500 mb-4 font-medium text-sm">CEO / General Planning</p>
+                    <a href="tel:010-9443-7881" class="text-lg font-bold text-blue-600 hover:text-blue-700 block bg-blue-50 py-2 rounded-lg border border-blue-100">010-9443-7881</a>
+                </div>
+                
+                <!-- 실장 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-600 group-hover:scale-110 transition">
+                        <i data-lucide="phone" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Heo Na-yeon</h3>
+                    <p class="text-slate-500 mb-4 font-medium text-sm">Manager / Operation Support</p>
+                    <a href="tel:010-5066-0433" class="text-lg font-bold text-emerald-600 hover:text-emerald-700 block bg-emerald-50 py-2 rounded-lg border border-emerald-100">010-5066-0433</a>
+                </div>
+
+                <!-- 이사 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6 text-amber-600 group-hover:scale-110 transition">
+                        <i data-lucide="star" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Jo Hyuk</h3>
+                    <p class="text-slate-500 mb-4 font-medium text-sm">Director / External Cooperation</p>
+                    <a href="tel:010-4249-4026" class="text-lg font-bold text-amber-600 hover:text-amber-700 block bg-amber-50 py-2 rounded-lg border border-amber-100">010-4249-4026</a>
+                </div>
+
+                <!-- Andrew Regan -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">Specialist</div>
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden group-hover:scale-110 transition border-2 border-red-100">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi0YSsOZ847rEAjEI5w8uFj7k66WmuO18z2dZuvC5dR80SjnRbjOSrWRmqAP3CrBLPQgWQloK8Ic9n15Kjj879TNlCy8dGxyArnbDnorHB9VhqP-9dqOAb0Dnb0TOf67vZ94O-z_NQ0KUCqv7Ig-SEEWE4yESfTvJXwTgSn5wj03vT048UiCyMyl-hF-6w" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1 truncate">Andrew Regan</h3>
+                    <p class="text-slate-500 mb-4 font-medium text-sm">General Director</p>
+                    <a href="tel:010-4401-5007" class="text-lg font-bold text-red-600 hover:text-red-700 block bg-red-50 py-2 rounded-lg border border-red-100 mb-3">010-4401-5007</a>
+                    <button onclick="openModal('modal-director')" class="w-full text-sm font-bold text-slate-500 hover:text-slate-700 flex items-center justify-center gap-1">
+                        View Detailed Profile <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6 flex flex-col items-center gap-8">
+            <div class="text-center">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII" alt="Tourmaker Logo" class="h-8 opacity-70 mb-4 mx-auto object-contain">
+                <p class="text-sm">Tourmaker - Creating New Value in Travel</p>
+                <p class="text-xs mt-2 text-slate-600">Copyright © 2026 Tourmaker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal: Director Profile -->
+    <div id="modal-director" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-bg p-4 opacity-0 transition-opacity duration-300" onclick="closeModal(event, 'modal-director')">
+        <div class="bg-white rounded-2xl w-full max-w-2xl shadow-2xl transform scale-95 transition-transform duration-300 overflow-hidden" onclick="event.stopPropagation()">
+            <div class="relative h-48 bg-emerald-900">
+                 <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50">
+                 <button onclick="closeModal(null, 'modal-director')" class="absolute top-4 right-4 text-white hover:text-emerald-200"><i data-lucide="x" class="w-8 h-8"></i></button>
+            </div>
+            <div class="px-8 pb-8 relative">
+                <div class="w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden -mt-16 mb-4 bg-white flex items-center justify-center">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi0YSsOZ847rEAjEI5w8uFj7k66WmuO18z2dZuvC5dR80SjnRbjOSrWRmqAP3CrBLPQgWQloK8Ic9n15Kjj879TNlCy8dGxyArnbDnorHB9VhqP-9dqOAb0Dnb0TOf67vZ94O-z_NQ0KUCqv7Ig-SEEWE4yESfTvJXwTgSn5wj03vT048UiCyMyl-hF-6w" class="w-full h-full object-cover">
+                </div>
+                
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-3xl font-bold text-slate-900">Andrew Regan <span class="text-lg font-normal text-slate-500">(Andy)</span></h3>
+                        <p class="text-emerald-600 font-bold">General Director</p>
+                    </div>
+                    <div class="bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-100 text-emerald-700 text-sm font-bold flex items-center gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/320px-Flag_of_Canada.svg.png" alt="Canada Flag" class="w-6 h-auto rounded-sm shadow-sm">
+                        Canada (Quebec)
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Key Career</h4>
+                        <ul class="text-slate-600 space-y-1 list-disc list-inside text-sm">
+                            <li>Resided in Korea for over 20 years (Perfect understanding of Korean culture/sentiment)</li>
+                            <li>Numerous experiences in planning and operating English education programs for kindergarten/elementary/middle school</li>
+                            <li>Cultural expert from Quebec, Canada</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Role</h4>
+                        <ul class="text-slate-600 space-y-1 list-disc list-inside text-sm">
+                            <li>Overall curriculum supervision and quality control</li>
+                            <li>Management and training of native instructors</li>
+                            <li>General supervision of parent counseling and safety management</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Contact</h4>
+                         <p class="text-slate-600 font-bold text-lg">010-4401-5007</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-emerald-50/50 p-4 rounded-xl text-center border border-emerald-100">
+                    <p class="text-emerald-800 italic font-medium">"Nature of Taebaek resembles my hometown Quebec.<br>I will present the best summer unforgettable to children."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const logoWhiteUrl = "https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII";
+        const logoDarkUrl = logoWhiteUrl;
+
+        function switchTab(tabId) {
+            ['prog-edu', 'prog-fes', 'prog-fam'].forEach(id => {
+                const el = document.getElementById(id);
+                el.classList.add('hidden');
+                el.classList.remove('grid');
+            });
+            
+            ['btn-edu', 'btn-fes', 'btn-fam'].forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                btn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20";
+            });
+
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.remove('hidden');
+            selectedContent.classList.add('grid');
+
+            const selectedBtnId = 'btn-' + tabId.split('-')[1];
+            const selectedBtn = document.getElementById(selectedBtnId);
+            
+            if (tabId === 'prog-edu') {
+                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-emerald-500 text-white shadow-lg transform scale-105";
+            } else if (tabId === 'prog-fes') {
+                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-blue-500 text-white shadow-lg transform scale-105";
+            } else {
+                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-amber-500 text-white shadow-lg transform scale-105";
+            }
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const modalContent = modal.querySelector('div');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event, modalId) {
+            if (event && !event.target.closest('.modal-bg')) return;
+            const modal = document.getElementById(modalId);
+            const modalContent = modal.querySelector('div');
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('navbar');
+            const navLinks = document.getElementById('nav-links');
+            const logoImg = document.getElementById('logo-img');
+
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+                header.classList.remove('bg-transparent');
+                navLinks.classList.remove('text-white/90');
+                navLinks.classList.add('text-slate-600');
+            } else {
+                header.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+                header.classList.add('bg-transparent');
+                navLinks.classList.add('text-white/90');
+                navLinks.classList.remove('text-slate-600');
+            }
+        });
+    </script>
+</body>
+</html>
