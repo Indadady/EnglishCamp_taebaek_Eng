@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <!-- Google Analytics (GA4) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -12,871 +12,551 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 Taebaek Global Summer School Proposal - Tourmaker</title>
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="2026 Taebaek Global Summer School Proposal">
-    <meta property="og:description" content="No Quebec in Canada, Yes Taebaek in Korea! A stay-type educational tourism project utilizing Taebaek's climate resources">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://indadady.github.io/EnglishCamp_taebaek/">
+    <title>태백시 초등 여름영어캠프 프로그램 제안서 | Tourmaker</title>
+    <meta name="description" content="초등학생 대상 6일(총 60시간) 여름 영어캠프. 오전 원어민 수업 + 오후 미니올림픽 팀 대항전. 태백시청 제출용 프로그램 제안서.">
+    <meta property="og:title" content="태백시 초등 여름영어캠프 프로그램 제안서">
+    <meta property="og:description" content="6일 · 4팀 · 24개 이벤트 · 총 60시간. 원어민 교실 수업과 체육관 미니올림픽을 결합한 초등 여름영어캠프 제안.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://indadady.github.io/EnglishCamp_taebaek_Eng/">
     <meta property="og:type" content="website">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .font-serif {
-            font-family: 'Playfair Display', serif;
-        }
-        /* Hero Background */
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .font-serif { font-family: 'Playfair Display', serif; }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(2, 44, 34, 0.55), rgba(15, 23, 42, 0.72)),
+              url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
         }
-        .modal-bg {
-            background-color: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(4px);
-        }
-        .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        /* Animation Utilities */
+        .text-shadow { text-shadow: 0 2px 12px rgba(0,0,0,.45); }
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(18px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #10b981; border-radius: 3px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #059669; }
-        
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .animate-fade-in-up { animation: fadeInUp .7s ease-out both; }
+        .nav-scrolled { background: rgba(255,255,255,.96); backdrop-filter: blur(10px); box-shadow: 0 1px 0 rgba(15,23,42,.06); }
+        .nav-scrolled #nav-links a, .nav-scrolled .nav-brand { color: #1e293b !important; }
+        .nav-scrolled #nav-links a:hover { color: #059669 !important; }
+        table.doc th, table.doc td { border: 1px solid #e2e8f0; padding: .65rem .75rem; vertical-align: top; }
+        table.doc th { background: #f8fafc; font-weight: 700; color: #334155; }
+        @media print {
+            header, .no-print { display: none !important; }
+            body { background: #fff; }
+            .hero-bg { background-image: none; background: #064e3b; min-height: auto; padding: 2rem 0; }
+            section { break-inside: avoid; }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-200 selection:text-emerald-900">
 
-    <!-- Header -->
-    <header class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="navbar">
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLH9GD9SVR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JLH9GD9SVR');
-    </script>
+<header class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="navbar">
+    <div class="container mx-auto px-5 md:px-8 py-4 flex justify-between items-center">
+        <a href="#home" class="flex items-center gap-2 group">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII" alt="Tourmaker" class="h-8 md:h-9 object-contain">
+            <span class="nav-brand hidden sm:inline text-white/95 text-sm font-medium tracking-tight">태백 여름영어캠프</span>
+        </a>
+        <nav id="nav-links" class="hidden lg:flex items-center gap-7 text-sm font-medium text-white/90">
+            <a href="#overview" class="hover:text-emerald-300 transition">개요</a>
+            <a href="#schedule" class="hover:text-emerald-300 transition">일과</a>
+            <a href="#options" class="hover:text-emerald-300 transition">일정옵션</a>
+            <a href="#themes" class="hover:text-emerald-300 transition">일일테마</a>
+            <a href="#staffing" class="hover:text-emerald-300 transition">인력·안전</a>
+            <a href="#esg" class="hover:text-emerald-300 transition">ESG</a>
+            <a href="#contact" class="px-4 py-2 rounded-full bg-emerald-600 text-white hover:bg-emerald-500 transition">문의</a>
+        </nav>
+        <button type="button" id="menu-btn" class="lg:hidden text-white p-2 no-print" aria-label="메뉴">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 no-print">
+        <div class="px-5 py-4 flex flex-col gap-3 text-sm font-medium text-slate-700">
+            <a href="#overview">개요</a>
+            <a href="#schedule">일과</a>
+            <a href="#options">일정옵션</a>
+            <a href="#themes">일일테마</a>
+            <a href="#staffing">인력·안전</a>
+            <a href="#esg">ESG</a>
+            <a href="#contact" class="text-emerald-700">문의</a>
+        </div>
+    </div>
+</header>
 
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2 group">
-                <img id="logo-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII" alt="Tourmaker Logo" class="h-8 md:h-9 object-contain transition-transform group-hover:scale-105">
-            </a>
-            <nav id="nav-links" class="hidden md:flex space-x-8 font-medium text-white/90">
-                <a href="#overview" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Background</a>
-                <a href="#program" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Program</a>
-                <a href="#location" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Infrastructure</a>
-                <a href="#budget" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Budget Strategy</a>
-                <a href="#economy" class="hover:text-emerald-400 transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Economic Impact</a>
-            </nav>
-            <button onclick="document.getElementById('contact').scrollIntoView()" class="bg-emerald-600 text-white px-6 py-2 rounded-full font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg text-sm flex items-center gap-2">
-                Proposal <i data-lucide="arrow-right" class="w-4 h-4"></i>
+<!-- HERO -->
+<section id="home" class="hero-bg min-h-[88vh] flex items-end md:items-center text-white pt-24 pb-16">
+    <div class="container mx-auto px-5 md:px-8 animate-fade-in-up">
+        <p class="text-emerald-300 text-sm md:text-base font-medium tracking-wide mb-3">태백시청 제출용 프로그램 제안 · 2026년 7월</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-shadow max-w-4xl">
+            초등 여름영어캠프<br>
+            <span class="text-emerald-300">6일 · 60시간 프로그램</span>
+        </h1>
+        <p class="mt-5 max-w-2xl text-white/90 text-base md:text-lg leading-relaxed">
+            오전은 원어민 교사의 테마 수업, 오후는 4개 고정 팀의 미니올림픽 대항전.
+            학습과 신체활동의 균형을 맞춘 주간형(데이캠프) 제안입니다.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3 text-sm md:text-base">
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-5 py-4 min-w-[7.5rem]">
+                <div class="text-2xl md:text-3xl font-black text-emerald-300">6</div>
+                <div class="text-white/80 mt-1">캠프 일수</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-5 py-4 min-w-[7.5rem]">
+                <div class="text-2xl md:text-3xl font-black text-emerald-300">4</div>
+                <div class="text-white/80 mt-1">고정 팀</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-5 py-4 min-w-[7.5rem]">
+                <div class="text-2xl md:text-3xl font-black text-emerald-300">24</div>
+                <div class="text-white/80 mt-1">팀 이벤트</div>
+            </div>
+            <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-5 py-4 min-w-[7.5rem]">
+                <div class="text-2xl md:text-3xl font-black text-emerald-300">60</div>
+                <div class="text-white/80 mt-1">총 운영시간</div>
+            </div>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-3 no-print">
+            <a href="#overview" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-semibold transition">프로그램 살펴보기</a>
+            <button type="button" onclick="window.print()" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold transition">
+                <i data-lucide="printer" class="w-4 h-4"></i> 제안서 인쇄하기
             </button>
         </div>
-    </header>
+        <p class="mt-6 text-xs text-white/60">Program design: Andrew Regan · Prepared for: Taebaek City Hall · Operator: Tourmaker</p>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4 relative">
-        <div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-slate-50 to-transparent"></div>
-        <div class="max-w-6xl mx-auto z-10 animate-fade-in-up">
-            <span class="inline-block py-1 px-4 rounded-full bg-emerald-600/80 backdrop-blur-sm border border-emerald-400/30 text-sm md:text-base mb-6 tracking-[0.2em] uppercase font-semibold hover:bg-emerald-600 transition cursor-default shadow-lg">
-                2026 Taebaek Global Summer School
-            </span>
-            <h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight text-shadow">
-                No Quebec in Canada,<br>
-                <span class="text-emerald-400">Yes Taebaek</span> in Korea!
-            </h1>
-            <p class="text-lg md:text-2xl mb-10 font-light text-slate-100 max-w-3xl mx-auto leading-relaxed text-shadow bg-black/20 p-4 rounded-xl backdrop-blur-sm">
-                Taebaek's summer is cool, but <strong class="text-emerald-300">Taebaek's economy must be hot.</strong><br>
-                Beyond one-time festivals, we propose <strong class="text-white">stay-type educational tourism</strong> where people stay.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#program" class="bg-white text-emerald-900 px-8 py-4 rounded-lg font-bold hover:bg-emerald-50 transition-all shadow-xl flex items-center justify-center gap-2 group">
-                    View Core Programs <i data-lucide="arrow-down" class="w-5 h-5 group-hover:translate-y-1 transition-transform"></i>
-                </a>
+<!-- OVERVIEW -->
+<section id="overview" class="py-20 bg-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">01 · 프로그램 개요</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">오전은 교실, 오후는 체육관</h2>
+        <p class="mt-5 text-slate-600 leading-relaxed text-lg">
+            본 캠프는 초등학생을 대상으로 한 <strong class="text-slate-800">6일(총 60시간)</strong> 여름 영어 프로그램입니다.
+            오전(09:00–12:00)에는 원어민 교사가 일일 테마에 맞춘 어휘·문법·말하기·듣기 수업을 진행하고,
+            오후(13:00–16:00)에는 체육관에서 4개 고정 팀이 미니올림픽 형태의 팀 대항전을 펼칩니다.
+            일부 오후 이벤트는 오전 수업과 직접 연계되며, 일부는 순수 체육·재미 활동으로 구성됩니다.
+            누적 점수제로 캠프 전 기간 순위를 관리하고, 마지막 날은 챔피언십 결승과 시상식으로 마무리합니다.
+        </p>
+
+        <div class="mt-10 grid md:grid-cols-2 gap-5">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="font-bold text-lg text-slate-900 flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-emerald-600"></i> 팀·점수 구조</h3>
+                <ul class="mt-4 space-y-2.5 text-slate-600 text-sm leading-relaxed list-disc pl-5">
+                    <li>1일차에 4개 고정 팀으로 편성, 캠프 종료까지 유지</li>
+                    <li>팀명·깃발/마스코트 디자인이 첫 팀빌딩 이벤트</li>
+                    <li>매일 오후 3시간 동안 4개 이벤트 진행, 각 이벤트 점수 부여</li>
+                    <li>매일 종료 시 누적 점수판 게시·갱신</li>
+                    <li>최종일 챔피언십 결승 및 전체 시상식</li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Overview Section (Why Now?) -->
-    <section id="overview" class="py-20 bg-slate-50 -mt-20 relative z-20">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Why Taebaek?</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Why Taebaek Now?</h2>
-                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
-                <p class="text-slate-600 text-lg">In the era of climate crisis and local extinction, Taebaek's 'climate resources' are the most certain alternative.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1: Climate -->
-                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                        <i data-lucide="thermometer-snowflake" class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Alternative to Climate Crisis<br><span class="text-blue-600">Cool City Taebaek</span></h3>
-                    <p class="text-slate-500 leading-relaxed">
-                        Decline in learning efficiency due to heatwaves.<br>
-                        Taebaek's summer climate, with an average altitude of 900m and most similar to Quebec, Canada, provides the optimal <strong>Study Efficiency</strong>.
-                    </p>
-                </div>
-
-                <!-- Card 2: Economy -->
-                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors">
-                        <i data-lucide="coins" class="w-8 h-8 text-emerald-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Era of High Exchange Rates<br><span class="text-emerald-600">Economic Edu-Model</span></h3>
-                    <p class="text-slate-500 leading-relaxed">
-                        Overseas training costs exceed 10 million won.<br>
-                        In Taebaek, you can experience a global curriculum with verified native directors at <strong>50% of the cost</strong> of overseas training.
-                    </p>
-                </div>
-
-                <!-- Card 3: Population -->
-                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 hover:shadow-2xl transition duration-300 group transform hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors">
-                        <i data-lucide="users" class="w-8 h-8 text-amber-500 group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Response to Local Extinction<br><span class="text-amber-500">Stay-type Living Population</span></h3>
-                    <p class="text-slate-500 leading-relaxed">
-                        From passing tourism to <strong>staying life</strong>.<br>
-                        Students and parents stay for more than 2 weeks, creating direct economic effects on the local economy (accommodation, food).
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Section -->
-    <section id="comparison" class="py-20 bg-slate-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Concept Motif</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Doppelgänger Cities: Quebec & Taebaek</h2>
-                <p class="text-slate-600 text-lg mt-2">"Is this Taebaek or Canada?" The parallel theory of the two cities that inspired the Global Summer School.</p>
-            </div>
-
-            <!-- Visual Comparison Banner -->
-            <div class="mb-12 relative rounded-3xl overflow-hidden shadow-xl">
-                <div class="grid grid-cols-2 h-64 md:h-80 relative">
-                    <!-- Quebec Forest -->
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Quebec Forest" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-bold">🇨🇦 Forest of Quebec</div>
-                    </div>
-                    <!-- Taebaek Forest -->
-                    <div class="relative">
-                        <img src="https://www.gangwon.to/upload/board/BDMAIN03/b15a9100-dd32-42c7-a3b1-a02ba3f6dd94.jpg" alt="Taebaek Birch Forest" class="w-full h-full object-cover">
-                        <div class="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-bold">🇰🇷 Birch Forest of Taebaek</div>
-                    </div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="bg-white/90 backdrop-blur-md px-8 py-4 rounded-full shadow-lg text-center">
-                        <p class="text-xl md:text-2xl font-bold text-slate-900 leading-tight">Will you fly for 13 hours?<br><span class="text-emerald-600">Or drive for 3 hours?</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                <!-- Quebec Side -->
-                <div class="space-y-6">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/320px-Flag_of_Canada.svg.png" alt="Canada Flag" class="w-8 h-auto shadow-sm rounded-sm">
-                        <h3 class="text-2xl font-bold text-slate-900">Quebec City, Canada</h3>
-                    </div>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        <strong class="text-emerald-700">"Little France in North America"</strong><br>
-                        North America's only walled city and a UNESCO World Heritage Site. A romantic city with developed summer festivals and European street culture in summer.
-                    </p>
-                    <div class="video-container group cursor-pointer" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/G6adw5NakH0?autoplay=1\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>'">
-                        <img src="https://img.youtube.com/vi/G6adw5NakH0/maxresdefault.jpg" alt="Quebec Video Thumbnail" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition">
-                            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-xl"><i data-lucide="play" class="w-8 h-8 text-white fill-current ml-1"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Taebaek Side -->
-                <div class="space-y-6">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/320px-Flag_of_South_Korea.svg.png" alt="Korea Flag" class="w-8 h-auto shadow-sm rounded-sm">
-                        <h3 class="text-2xl font-bold text-slate-900">Taebaek City, Korea</h3>
-                    </div>
-                    <p class="text-slate-600 leading-relaxed text-sm">
-                        <strong class="text-blue-700">"Highland City at 900m Altitude"</strong><br>
-                        Boasts a cool climate and exotic scenery even in midsummer. The cabbage fields and wind farm on Maebongsan Mountain are called the Alps of Korea.
-                    </p>
-                    <div class="rounded-xl overflow-hidden h-80 shadow-md md:h-[calc(20rem+1rem+56.25%)]">
-                        <img src="https://www.news1.kr/_next/image?q=75&url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2025%2F7%2F10%2F7387677%2Fhigh.jpg&w=1920" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-white">
-                            <p class="font-bold">Cool Wind Hill, Maebongsan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 1. Program Section -->
-    <section id="program" class="py-20 bg-emerald-900 text-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
-
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-12">
-                <span class="text-emerald-400 font-bold tracking-wider text-sm uppercase">1. Core Program</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Programs United with the Festival</h2>
-                <p class="text-emerald-200 mt-3">Learning in the classroom leads to experiences at the festival site.</p>
-            </div>
-
-            <!-- Trust Visuals -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="relative rounded-2xl overflow-hidden shadow-lg h-64 border-2 border-emerald-500/30 group">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhJ5Fhx09WxuR9SI-VEk_p_eyw6Ap0l6XDpkxf9EqblZnrw2CqPq4hzTy_3y23a1uaEgjmdOzw6YPRYeQAmw1FT2S8TdvYD9MIHLASEiEy52GJQA6iu36BSCiYqYBKSJyEqSf7AjcdTJumhyq8L-btHV98Ia70fJiAf5JjgSRFDaJKDmWZfQqgDgIpWLkQ" alt="Andy Teaching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                        <p class="text-white font-bold text-lg">"We teach happily at the children's eye level"</p>
-                        <p class="text-emerald-300 text-sm">General Director Andy's actual class scene</p>
-                    </div>
-                </div>
-                <div class="relative rounded-2xl overflow-hidden shadow-lg h-64 border-2 border-blue-500/30 group">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiw3ZmGjSTXqaAyT4_oJrwGatJz1qYzzZGWc8ejBXNtZYZ24It_TkeeYLZsiXbE1nfTdaowfz6wX-TYc_B0AL5s_CtBue8qyZkcGo5uNu5SfKIiI_AxeSym4vqyK6bWUm-TeS5Y1YIOzsG0HULcyFx9QXRTfqhDAhUlW35sHJF28vDjglO9vNDeeDB66iI" alt="Cubi Global Camp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                        <p class="text-white font-bold text-lg">"Safely with verified operational know-how"</p>
-                        <p class="text-blue-300 text-sm">Cubi Global overseas camp operation site</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tabs -->
-            <div class="flex flex-wrap justify-center mb-10 gap-2">
-                <button onclick="switchTab('prog-edu')" id="btn-edu" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-emerald-500 text-white shadow-lg transform scale-105">Weekdays (Education)</button>
-                <button onclick="switchTab('prog-fes')" id="btn-fes" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20">Weekends (Festival)</button>
-                <button onclick="switchTab('prog-fam')" id="btn-fam" class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20">Always (Family)</button>
-            </div>
-
-            <!-- Content Area -->
-            <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 md:p-10 border border-white/20 min-h-[300px]">
-                
-                <!-- Weekday (Education) -->
-                <div id="prog-edu" class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
-                    <div class="flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-emerald-300 mb-4">📚 Taebaek-Quebec Class</h3>
-                        <p class="text-emerald-100 mb-4 text-sm">We use the same textbooks that Canadian children actually learn, right here in Taebaek.</p>
-                        <ul class="space-y-4 text-lg mb-6">
-                            <li class="flex items-start gap-3">
-                                <div class="bg-emerald-500/20 p-2 rounded-lg"><i data-lucide="book-open" class="w-6 h-6 text-emerald-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">Cultural Class with Andy</strong>
-                                    <span class="text-emerald-200 text-sm">Integrated learning of Canadian history/culture/English</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="bg-emerald-500/20 p-2 rounded-lg"><i data-lucide="mic" class="w-6 h-6 text-emerald-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">Discussion & Presentation (PBL)</strong>
-                                    <span class="text-emerald-200 text-sm">Korean students logically express their thoughts in English</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 h-64">
-                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
-                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjDDYbEB8PbSLcNWDXM1fh1-PANMYuMmG7h8uK5LLTDvJ5CJT_vMWdHvpTVt9XnuBNyP9J4aj7bxRxdRCMwPyArXdEjaY9AahnxdrC8pV5WV0yMFWyGd0EAF2wajy7ma0x7wcudmVbwXrX3fiO1EirTbFpqe-EWrc2jv99qdVFVTVzYao5-kFx5oT2G2OY" alt="Classroom Activity" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        </div>
-                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
-                            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEigk4KA11jvZ2BdE98UBjX5ZuBuiZ1i3xrraomNdUEpzye_dp1PXTWk950WN44rC5lUnaFdhKByZC6a7Wiaaa8aYt_EnQGz3TLyzOTc00q2Ys9v8hswqLxPWAo8hDCRqi-P2ibJq44iYlW6fNtkBBWgVk3VSU_dg3asajCCYUFpJMaAwU0tv1V6axRLejo" alt="Student Presentation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Weekend (Festival) -->
-                <div id="prog-fes" class="hidden grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
-                    <div class="flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-blue-300 mb-4">🎉 Global Festival Leader</h3>
-                        <p class="text-blue-100 mb-4 text-sm">Build confidence by using learned English directly at the festival site.</p>
-                        <ul class="space-y-4 text-lg">
-                            <li class="flex items-start gap-3">
-                                <div class="bg-blue-500/20 p-2 rounded-lg"><i data-lucide="users" class="w-6 h-6 text-blue-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">[Festival Link] Junior Interpretation/Guide Volunteer</strong>
-                                    <span class="text-blue-200 text-sm">Summer school students support guidance and interpretation for foreign visitors</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="bg-blue-500/20 p-2 rounded-lg"><i data-lucide="music" class="w-6 h-6 text-blue-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">[Stage Link] English Musical Performance</strong>
-                                    <span class="text-blue-200 text-sm">Student performance presentation unfolding on the main festival stage</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="rounded-2xl overflow-hidden h-64 border-2 border-white/20">
-                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgaqIZcuRukUki7byckj6lonutaTdfTmx36pZxkLA1KLlYlrYhc8u5ucooFYbhUdxESvfHpX9AuCy5IywFMV0UHbilIZhZrkS5LiJmTiLkNdytLejuLqUUED9ci0vBdQFFjSOxmZC5tesCQqxRWoTOfj30-4BmNr8fYRejaQVfQVUci46o7ZSBt4ZKTmaM" alt="Festival Activity" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Family (Workation) -->
-                <div id="prog-fam" class="hidden grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
-                    <div class="flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-amber-300 mb-4">💻 Mom & Dad Workation</h3>
-                        <p class="text-amber-100 mb-4 text-sm">While the child studies, parents enjoy work and rest in the nature of Taebaek.</p>
-                        <ul class="space-y-4 text-lg">
-                            <li class="flex items-start gap-3">
-                                <div class="bg-amber-500/20 p-2 rounded-lg"><i data-lucide="wifi" class="w-6 h-6 text-amber-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">Forest Shared Office</strong>
-                                    <span class="text-amber-200 text-sm">Providing work spaces linked to cool forest cafes such as 'Wind Hill'</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div class="bg-amber-500/20 p-2 rounded-lg"><i data-lucide="map" class="w-6 h-6 text-amber-300"></i></div>
-                                <div>
-                                    <strong class="block text-white">Providing Taebaek Gourmet Map</strong>
-                                    <span class="text-amber-200 text-sm">Inducing local gourmet tours curated by Tourmaker</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 h-64">
-                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
-                            <img src="https://cdn.whistler.com/blog/wp-content/uploads/2018/09/23091531/Blog-Body-Image.jpg" alt="Forest Workation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        </div>
-                        <div class="rounded-2xl overflow-hidden relative border-2 border-white/10 group">
-                            <img src="https://i.pinimg.com/236x/08/3b/07/083b0723527f8eadb0e96ba30f3032b3.jpg" alt="Cafe Workation" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- 2주간 커리큘럼 -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold text-white mb-6 text-center">📅 2-Week Curriculum (Example)</h3>
-                <div class="overflow-x-auto rounded-2xl shadow-xl">
-                    <table class="w-full text-sm text-left text-emerald-100">
-                        <thead class="text-xs text-emerald-200 uppercase bg-emerald-800/50">
-                            <tr>
-                                <th scope="col" class="px-4 py-3 text-center">Week</th>
-                                <th scope="col" class="px-4 py-3 text-center">Day</th>
-                                <th scope="col" class="px-4 py-3">Morning (Academic Immersion)</th>
-                                <th scope="col" class="px-4 py-3">Afternoon (Activity & Local)</th>
-                                <th scope="col" class="px-4 py-3">Evening (Community)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- 1주차 -->
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td rowspan="5" class="px-4 py-3 text-center font-bold bg-emerald-800/30">Week 1<br>(Adaptation)</td>
-                                <td class="px-4 py-3 text-center font-bold">Mon</td>
-                                <td class="px-4 py-3">[Orientation] Entrance Ceremony, House Assignment</td>
-                                <td class="px-4 py-3">[Campus Tour] Taebaek Basecamp Tour</td>
-                                <td class="px-4 py-3">Welcome Bonfire</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Tue</td>
-                                <td class="px-4 py-3">[Social Studies] Compare Canada vs Taebaek Geography</td>
-                                <td class="px-4 py-3">[PE - Sports] Experience Canada's National Sport 'Hockey'</td>
-                                <td class="px-4 py-3">English Diary Writing & Mentoring</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Wed</td>
-                                <td class="px-4 py-3">[Science] Taebaek's Geology and Fossils (Dinosaur/Coal)</td>
-                                <td class="px-4 py-3">[Field Trip] Taebaek Coal Museum English Mission Tour</td>
-                                <td class="px-4 py-3">Movie Night (Canadian Movie)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Thu</td>
-                                <td class="px-4 py-3">[Art] Canadian Flag & Taebaek Symbol Collage</td>
-                                <td class="px-4 py-3">[Cooking] Making Canadian Snack 'Poutine'</td>
-                                <td class="px-4 py-3">Talent Show Preparation (Group)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-800/50">
-                                <td class="px-4 py-3 text-center font-bold">Fri</td>
-                                <td class="px-4 py-3">[Presentation] Week 1 Project Presentation</td>
-                                <td class="px-4 py-3">[Water Play] Taebaek Valley/Water Park Water Play</td>
-                                <td class="px-4 py-3">BBQ Party</td>
-                            </tr>
-                            <!-- 2주차 -->
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td rowspan="5" class="px-4 py-3 text-center font-bold bg-emerald-800/30">Week 2<br>(Deepening)</td>
-                                <td class="px-4 py-3 text-center font-bold">Mon</td>
-                                <td class="px-4 py-3">[History] Korea and Canada in the World</td>
-                                <td class="px-4 py-3">[Safety Hero] 365 Safe Town English Safety Experience</td>
-                                <td class="px-4 py-3">Star Gazing (Taebaek Star Viewing)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Tue</td>
-                                <td class="px-4 py-3">[Biology] Exploration of Taebaek's Alpine Plants</td>
-                                <td class="px-4 py-3">[Forest Trekking] Geomryongso/Forest Path English Treasure Hunt</td>
-                                <td class="px-4 py-3">Role Playing (Market/Hospital Situation Drama)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Wed</td>
-                                <td class="px-4 py-3">[Music/Drama] Learning English Musical/Pop Songs</td>
-                                <td class="px-4 py-3">[Festival Prep] Taebaek Summer Festival Performance Rehearsal</td>
-                                <td class="px-4 py-3">Mini Quebec Festival (Festival Participation)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30 border-b border-emerald-600/50">
-                                <td class="px-4 py-3 text-center font-bold">Thu</td>
-                                <td class="px-4 py-3">[Global Manners] Global Etiquette & Discussion</td>
-                                <td class="px-4 py-3">[City Tour] Taebaek City Mission (Merchant Interview)</td>
-                                <td class="px-4 py-3">Farewell Party (Completion Ceremony Rehearsal)</td>
-                            </tr>
-                            <tr class="bg-emerald-700/30">
-                                <td class="px-4 py-3 text-center font-bold">Fri</td>
-                                <td class="px-4 py-3">[Graduation] Completion Ceremony (Certificate awarded by Andy)</td>
-                                <td class="px-4 py-3" colspan="2">[Departure] Sharing memories of 2 weeks and returning home</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. Location Advantage Section -->
-    <section id="location" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="mb-12">
-                <span class="text-blue-600 font-bold tracking-wider text-sm uppercase">2. Location Advantage</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">How to utilize Taebaek's unique infrastructure 200%</h2>
-                <p class="text-slate-500 mt-2">Lower costs by utilizing idle public facilities, and add uniqueness with the high-altitude environment.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Accommodation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Accommodation Cost Reduction</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">Utilization of Public Lodging Facilities</h3>
-                        <p class="text-sm text-slate-600 mb-4">Utilizing <strong>Taebaeksan Minbak Village</strong> and <strong>365 Safe Town accommodation</strong>, which are off-peak in summer, as camp dormitories.</p>
-                        <ul class="text-xs text-slate-500 space-y-1">
-                            <li>• Cost efficiency and increase in city operation revenue</li>
-                            <li>• Cultivating community spirit through group life</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Safety Education" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-2 left-2 bg-amber-500 text-white text-xs px-2 py-1 rounded">Safety + English</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">Link with 365 Safe Town</h3>
-                        <p class="text-sm text-slate-600 mb-4">Operating <strong>"English Safety Hero"</strong> program utilizing safety experience facilities as English mission sites.</p>
-                        <ul class="text-xs text-slate-500 space-y-1">
-                            <li>• Korea's only safety-themed English education</li>
-                            <li>• Effect of increasing facility utilization rate</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 group hover:shadow-lg transition">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mountain Trekking" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute bottom-2 left-2 bg-emerald-600 text-white text-xs px-2 py-1 rounded">Cool Trekking</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg text-slate-900 mb-2">Highland Forest Trekking</h3>
-                        <p class="text-sm text-slate-600 mb-4">Learn English in nature while walking on the cool forest paths of Taebaek even in midsummer.</p>
-                        <ul class="text-xs text-slate-500 space-y-1">
-                            <li>• Exploring famous spots such as Geomryongso and Hambaeksan</li>
-                            <li>• Performing English treasure hunt missions in nature</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Budget Strategy Section -->
-    <section id="budget" class="py-20 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">3. Budget Strategy</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">'Conversion' and 'Convergence' of 10% of Festival Budget</h2>
-                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
-                <p class="text-slate-600 text-lg">Use it not as a simple event cost, but as a <strong class="text-emerald-700">residential program budget</strong> that makes the external population live for 2 weeks.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- Problem -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg border border-red-100 relative group hover:shadow-xl transition">
-                    <div class="absolute -top-5 left-8 bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">AS-IS (Current)</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                        <i data-lucide="alert-circle" class="w-6 h-6 text-red-500"></i> Limitations of Existing Festival Budget
-                    </h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="x" class="w-3 h-3"></i></span>
-                            <span><strong>One-time Expenditure:</strong> Concentration on volatile costs such as performance fees and stage installation costs</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="clock" class="w-3 h-3"></i></span>
-                            <span><strong>Short Stay:</strong> Performance viewing (2 hours) → 1 meal → Return home</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="bg-red-100 text-red-600 rounded p-1"><i data-lucide="trending-down" class="w-3 h-3"></i></span>
-                            <span><strong>Low Trickle-down Effect:</strong> Weak link to accommodation and multi-meal dining within the region</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Solution -->
-                <div class="bg-white p-8 rounded-3xl shadow-lg border border-emerald-100 relative group hover:shadow-xl transition transform md:-translate-x-4 md:scale-105 z-10">
-                    <div class="absolute -top-5 left-8 bg-emerald-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">TO-BE (Proposal)</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
-                        <i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-600"></i> Budget Conversion to Educational Tourism
-                    </h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex items-start gap-2">
-                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="check" class="w-3 h-3"></i></span>
-                            <span><strong>Stay-type Budget:</strong> Cost of attracting living population residing for more than 2 weeks</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="zap" class="w-3 h-3"></i></span>
-                            <span><strong>Festival Synergy:</strong> Utilizing student performance presentations as main festival content</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="bg-emerald-100 text-emerald-600 rounded p-1"><i data-lucide="coins" class="w-3 h-3"></i></span>
-                            <span><strong>Global Zone Operation:</strong> Native instructors operate English experience booths at the festival site</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Economic Analysis Section -->
-    <section id="economy" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">4. Economic Impact Detail</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Economic Analysis: Value Comparison of 30 Million Won</h2>
-                <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full my-4"></div>
-                <p class="text-slate-600 text-lg">Same budget, completely different results. The surest way to distribute the festival budget directly to small business owners.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Option A: Singer -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 opacity-80 hover:opacity-100 transition">
-                    <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-xl font-bold text-slate-600">A. Recruiting 1 Famous Singer Team</h3>
-                        <span class="bg-slate-200 text-slate-600 px-3 py-1 rounded-full text-sm font-bold">Existing Method</span>
-                    </div>
-                    <div class="text-4xl font-bold text-slate-400 mb-2">30 Million KRW</div>
-                    <p class="text-slate-500 text-sm mb-6">Input Budget (Based on casting fee)</p>
-                    
-                    <ul class="space-y-4 text-slate-600 border-t border-slate-200 pt-6">
-                        <li class="flex justify-between">
-                            <span>Stay Time</span>
-                            <span class="font-bold">Average 3 hours</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Major Consumption</span>
-                            <span class="font-bold">Convenience store, snacks (small amount)</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span>Regional Trickle-down Effect</span>
-                            <span class="font-bold text-red-500">Insignificant (Volatile)</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Option B: Summer School -->
-                <div class="bg-white p-8 rounded-3xl border-2 border-emerald-500 shadow-xl transform md:scale-105 z-10">
-                    <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-xl font-bold text-emerald-800">B. Summer School Operation</h3>
-                        <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-bold">Proposed Method</span>
-                    </div>
-                    <div class="text-4xl font-bold text-emerald-600 mb-2">30 Million KRW</div>
-                    <p class="text-slate-500 text-sm mb-6">Input Budget (Based on operating costs)</p>
-                    
-                    <div class="space-y-4 border-t border-slate-100 pt-6">
-                        <div class="flex justify-between items-center">
-                            <span class="text-slate-600">Attracted Personnel</span>
-                            <span class="font-bold text-slate-800">50 households (200 people)</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-slate-600">Stay Period</span>
-                            <span class="font-bold text-slate-800">14 days (2 weeks)</span>
-                        </div>
-                        <div class="bg-emerald-50 p-4 rounded-xl space-y-2 mt-2">
-                            <p class="text-sm font-bold text-emerald-800 mb-2">💰 Estimated Direct Consumption</p>
-                            <div class="flex justify-between text-sm text-slate-600">
-                                <span>Accommodation Fee</span>
-                                <span>70 Million KRW</span>
-                            </div>
-                            <div class="flex justify-between text-sm text-slate-600">
-                                <span>Food Expenses (42 meals)</span>
-                                <span>126 Million KRW</span>
-                            </div>
-                            <div class="flex justify-between text-sm text-slate-600">
-                                <span>Experience/Other</span>
-                                <span>50 Million KRW</span>
-                            </div>
-                            <div class="border-t border-emerald-200 pt-2 flex justify-between font-bold text-lg text-emerald-700">
-                                <span>Total Effect</span>
-                                <span>Approx. 250 Million KRW</span>
-                            </div>
-                        </div>
-                        <p class="text-center text-xs text-emerald-600 font-bold mt-2">👉 More than 8 times the effect compared to budget input!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section V: Conclusion -->
-    <section class="py-20 bg-slate-900 text-white text-center">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl font-bold mb-6">"Proposal for Taebaek City"</h2>
-            <p class="text-xl font-light leading-relaxed text-slate-300 mb-10">
-                This project does not require a huge new budget.<br>
-                Please reinvest a part of the annual festival budget for <strong class="text-white">'future generation education'</strong> and <strong class="text-white">'practical local consumption'</strong>.
-            </p>
-            <p class="text-lg text-emerald-400 font-medium">
-                Tourmaker will combine Taebaek's climate with the global human resource Andy to make<br>
-                Taebaek the <span class="text-white border-b-2 border-emerald-500 pb-1">'hottest English education holy land in Korea'</span> this summer.
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer & Contact -->
-    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">Creating the Future of Taebaek Together</h2>
-            <p class="text-slate-500 mb-12">Tourmaker will be a reliable partner.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                <!-- 대표 -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 group-hover:scale-110 transition">
-                        <i data-lucide="user" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Lee Jae-myung</h3>
-                    <p class="text-slate-500 mb-4 font-medium text-sm">CEO / General Planning</p>
-                    <a href="tel:010-9443-7881" class="text-lg font-bold text-blue-600 hover:text-blue-700 block bg-blue-50 py-2 rounded-lg border border-blue-100">010-9443-7881</a>
-                </div>
-                
-                <!-- 실장 -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-600 group-hover:scale-110 transition">
-                        <i data-lucide="phone" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Heo Na-yeon</h3>
-                    <p class="text-slate-500 mb-4 font-medium text-sm">Manager / Operation Support</p>
-                    <a href="tel:010-5066-0433" class="text-lg font-bold text-emerald-600 hover:text-emerald-700 block bg-emerald-50 py-2 rounded-lg border border-emerald-100">010-5066-0433</a>
-                </div>
-
-                <!-- 이사 -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6 text-amber-600 group-hover:scale-110 transition">
-                        <i data-lucide="star" class="w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Jo Hyuk</h3>
-                    <p class="text-slate-500 mb-4 font-medium text-sm">Director / External Cooperation</p>
-                    <a href="tel:010-4249-4026" class="text-lg font-bold text-amber-600 hover:text-amber-700 block bg-amber-50 py-2 rounded-lg border border-amber-100">010-4249-4026</a>
-                </div>
-
-                <!-- Andrew Regan -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10">Specialist</div>
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden group-hover:scale-110 transition border-2 border-red-100">
-                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi0YSsOZ847rEAjEI5w8uFj7k66WmuO18z2dZuvC5dR80SjnRbjOSrWRmqAP3CrBLPQgWQloK8Ic9n15Kjj879TNlCy8dGxyArnbDnorHB9VhqP-9dqOAb0Dnb0TOf67vZ94O-z_NQ0KUCqv7Ig-SEEWE4yESfTvJXwTgSn5wj03vT048UiCyMyl-hF-6w" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1 truncate">Andrew Regan</h3>
-                    <p class="text-slate-500 mb-4 font-medium text-sm">General Director</p>
-                    <a href="tel:010-4401-5007" class="text-lg font-bold text-red-600 hover:text-red-700 block bg-red-50 py-2 rounded-lg border border-red-100 mb-3">010-4401-5007</a>
-                    <button onclick="openModal('modal-director')" class="w-full text-sm font-bold text-slate-500 hover:text-slate-700 flex items-center justify-center gap-1">
-                        View Detailed Profile <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="container mx-auto px-6 flex flex-col items-center gap-8">
-            <div class="text-center">
-                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII" alt="Tourmaker Logo" class="h-8 opacity-70 mb-4 mx-auto object-contain">
-                <p class="text-sm">Tourmaker - Creating New Value in Travel</p>
-                <p class="text-xs mt-2 text-slate-600">Copyright © 2026 Tourmaker. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal: Director Profile -->
-    <div id="modal-director" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-bg p-4 opacity-0 transition-opacity duration-300" onclick="closeModal(event, 'modal-director')">
-        <div class="bg-white rounded-2xl w-full max-w-2xl shadow-2xl transform scale-95 transition-transform duration-300 overflow-hidden" onclick="event.stopPropagation()">
-            <div class="relative h-48 bg-emerald-900">
-                 <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50">
-                 <button onclick="closeModal(null, 'modal-director')" class="absolute top-4 right-4 text-white hover:text-emerald-200"><i data-lucide="x" class="w-8 h-8"></i></button>
-            </div>
-            <div class="px-8 pb-8 relative">
-                <div class="w-32 h-32 rounded-full border-4 border-white shadow-lg overflow-hidden -mt-16 mb-4 bg-white flex items-center justify-center">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi0YSsOZ847rEAjEI5w8uFj7k66WmuO18z2dZuvC5dR80SjnRbjOSrWRmqAP3CrBLPQgWQloK8Ic9n15Kjj879TNlCy8dGxyArnbDnorHB9VhqP-9dqOAb0Dnb0TOf67vZ94O-z_NQ0KUCqv7Ig-SEEWE4yESfTvJXwTgSn5wj03vT048UiCyMyl-hF-6w" class="w-full h-full object-cover">
-                </div>
-                
-                <div class="flex justify-between items-start mb-6">
-                    <div>
-                        <h3 class="text-3xl font-bold text-slate-900">Andrew Regan <span class="text-lg font-normal text-slate-500">(Andy)</span></h3>
-                        <p class="text-emerald-600 font-bold">General Director</p>
-                    </div>
-                    <div class="bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-100 text-emerald-700 text-sm font-bold flex items-center gap-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/320px-Flag_of_Canada.svg.png" alt="Canada Flag" class="w-6 h-auto rounded-sm shadow-sm">
-                        Canada (Quebec)
-                    </div>
-                </div>
-
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Key Career</h4>
-                        <ul class="text-slate-600 space-y-1 list-disc list-inside text-sm">
-                            <li>Resided in Korea for over 20 years (Perfect understanding of Korean culture/sentiment)</li>
-                            <li>Numerous experiences in planning and operating English education programs for kindergarten/elementary/middle school</li>
-                            <li>Cultural expert from Quebec, Canada</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Role</h4>
-                        <ul class="text-slate-600 space-y-1 list-disc list-inside text-sm">
-                            <li>Overall curriculum supervision and quality control</li>
-                            <li>Management and training of native instructors</li>
-                            <li>General supervision of parent counseling and safety management</li>
-                        </ul>
-                    </div>
-                    <div>
-                         <h4 class="font-bold text-slate-800 mb-2 border-b pb-1">Contact</h4>
-                         <p class="text-slate-600 font-bold text-lg">010-4401-5007</p>
-                    </div>
-                </div>
-                
-                <div class="mt-8 bg-emerald-50/50 p-4 rounded-xl text-center border border-emerald-100">
-                    <p class="text-emerald-800 italic font-medium">"Nature of Taebaek resembles my hometown Quebec.<br>I will present the best summer unforgettable to children."</p>
-                </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="font-bold text-lg text-slate-900 flex items-center gap-2"><i data-lucide="sparkles" class="w-5 h-5 text-emerald-600"></i> 운영 강점</h3>
+                <ul class="mt-4 space-y-2.5 text-slate-600 text-sm leading-relaxed list-disc pl-5">
+                    <li>6일 · 4팀 · 24이벤트 · 60시간 — 기획 밀도의 정량적 가시성</li>
+                    <li>오전(학습) / 오후(체육) 공간·방식 분리로 집중력 배려</li>
+                    <li>평일 집중형 · 주말 분산형 중 시설·가정 일정에 맞게 택1</li>
+                    <li>언어 연계 미션과 순수 체육 활동의 균형</li>
+                    <li>숙박 없는 주간형(데이캠프)으로 운영 부담 완화</li>
+                </ul>
             </div>
         </div>
     </div>
+</section>
 
-    <script>
-        lucide.createIcons();
+<!-- DAILY SCHEDULE -->
+<section id="schedule" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">02 · 일일 시간표</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">매일 동일한 블록 구조</h2>
+        <p class="mt-4 text-slate-600">일정 옵션(평일집중형·주말분산형)과 무관하게 아래 시간표를 적용합니다.</p>
 
-        const logoWhiteUrl = "https://blogger.googleusercontent.com/img/a/AVvXsEjPt_XUtR36-do31LZPu-HseUFx7O8EWPS3mqIfk_I03B3ltV1gnHyB8IWDw7wmx5NRUKphcI0oobuDBpPqxrFbHUiaE68DaCS7t4_c8mrCAAhqMtGt2wMem2aWCTFY2JO9vIWqqdpHYnD-gNE6Lj64aRyTuT9jHZvmylPMNU0JpZ6sGcFmuq8m5717HII";
-        const logoDarkUrl = logoWhiteUrl;
+        <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="doc w-full text-sm min-w-[560px]">
+                <thead>
+                    <tr>
+                        <th class="w-36 text-left">시간</th>
+                        <th class="w-44 text-left">활동</th>
+                        <th class="text-left">세부 내용</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-700">
+                    <tr><td>09:00–10:30</td><td class="font-semibold">영어 수업 1</td><td>원어민 교사 · 교실. 일일 테마 핵심 어휘·문법</td></tr>
+                    <tr class="bg-slate-50/80"><td>10:30–10:45</td><td class="font-semibold">휴식 / 간식</td><td>—</td></tr>
+                    <tr><td>10:45–12:00</td><td class="font-semibold">영어 수업 2</td><td>원어민 교사 · 교실. 말하기·듣기 연습</td></tr>
+                    <tr class="bg-slate-50/80"><td>12:00–13:00</td><td class="font-semibold">점심</td><td>—</td></tr>
+                    <tr><td>13:00–13:10</td><td class="font-semibold">팀 허들 &amp; 테마 공개</td><td>체육관. 팀 집합, 오후 4개 이벤트 예고</td></tr>
+                    <tr class="bg-slate-50/80"><td>13:10–13:40</td><td class="font-semibold">오후 이벤트 1</td><td>오전 수업 연계 언어 미션 · 점수 부여</td></tr>
+                    <tr><td>13:40–13:50</td><td class="font-semibold">워터 브레이크</td><td>개인 텀블러 지참 권장</td></tr>
+                    <tr class="bg-slate-50/80"><td>13:50–14:20</td><td class="font-semibold">오후 이벤트 2</td><td>팀 계주 또는 장애물 코스 · 점수 부여</td></tr>
+                    <tr><td>14:20–14:30</td><td class="font-semibold">워터 브레이크</td><td>—</td></tr>
+                    <tr class="bg-slate-50/80"><td>14:30–15:00</td><td class="font-semibold">오후 이벤트 3</td><td>신체 팀 챌린지(줄다리기, 태그 등) · 점수 부여</td></tr>
+                    <tr><td>15:00–15:10</td><td class="font-semibold">워터 브레이크</td><td>—</td></tr>
+                    <tr class="bg-slate-50/80"><td>15:10–15:40</td><td class="font-semibold">오후 이벤트 4</td><td>당일 최종 팀 배틀/피날레 · 점수 부여</td></tr>
+                    <tr><td>15:40–16:00</td><td class="font-semibold">점수판 시상</td><td>일일 우승 발표, 누적 점수 갱신·게시</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
-        function switchTab(tabId) {
-            ['prog-edu', 'prog-fes', 'prog-fam'].forEach(id => {
-                const el = document.getElementById(id);
-                el.classList.add('hidden');
-                el.classList.remove('grid');
-            });
-            
-            ['btn-edu', 'btn-fes', 'btn-fam'].forEach(btnId => {
-                const btn = document.getElementById(btnId);
-                btn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-white/10 text-emerald-100 hover:bg-white/20";
-            });
+<!-- OPTIONS -->
+<section id="options" class="py-20 bg-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">03 · 일정 옵션 (택 1)</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">시설·가정 일정에 맞는 캘린더</h2>
+        <p class="mt-4 text-slate-600">두 옵션 모두 동일한 60시간 수업·경쟁을 포함합니다. 시청은 시설 가용성에 따라 선택합니다.</p>
 
-            const selectedContent = document.getElementById(tabId);
-            selectedContent.classList.remove('hidden');
-            selectedContent.classList.add('grid');
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+            <article class="rounded-2xl border-2 border-emerald-200 bg-emerald-50/40 p-6 md:p-7">
+                <span class="inline-block text-xs font-bold tracking-wide text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">옵션 A</span>
+                <h3 class="mt-3 text-xl font-black text-slate-900">평일 집중형</h3>
+                <p class="mt-1 text-emerald-800 font-medium text-sm">1주간 월~토 연속</p>
+                <p class="mt-3 text-sm text-slate-600 leading-relaxed">한 주에 6일을 몰아 진행. 방학 기간 집중 참여를 선호하는 가정에 적합합니다.</p>
+                <ol class="mt-5 space-y-2 text-sm text-slate-700">
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">월</span>캠프에 오신 것을 환영합니다!</li>
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">화</span>동식물과 자연</li>
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">수</span>슈퍼히어로</li>
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">목</span>해적과 보물찾기</li>
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">금</span>여행과 탐험</li>
+                    <li class="flex gap-2"><span class="text-emerald-700 font-bold w-14 shrink-0">토</span>챔피언십 결승 &amp; 시상의 날</li>
+                </ol>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-7">
+                <span class="inline-block text-xs font-bold tracking-wide text-slate-700 bg-slate-200/80 px-3 py-1 rounded-full">옵션 B</span>
+                <h3 class="mt-3 text-xl font-black text-slate-900">주말 분산형</h3>
+                <p class="mt-1 text-slate-700 font-medium text-sm">3주간 토~일</p>
+                <p class="mt-3 text-sm text-slate-600 leading-relaxed">3주 주말에 걸쳐 6일 분산. 평일 시설 사용이 어렵거나 분산 일정을 선호할 때 적합합니다.</p>
+                <ol class="mt-5 space-y-2 text-sm text-slate-700">
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말1 토</span>환영</li>
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말1 일</span>동식물과 자연</li>
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말2 토</span>슈퍼히어로</li>
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말2 일</span>해적과 보물찾기</li>
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말3 토</span>여행과 탐험</li>
+                    <li class="flex gap-2"><span class="text-slate-500 font-bold w-20 shrink-0">주말3 일</span>챔피언십 &amp; 시상</li>
+                </ol>
+            </article>
+        </div>
+        <p class="mt-5 text-xs text-slate-500">매일 운영 시간: 09:00–16:00</p>
+    </div>
+</section>
 
-            const selectedBtnId = 'btn-' + tabId.split('-')[1];
-            const selectedBtn = document.getElementById(selectedBtnId);
-            
-            if (tabId === 'prog-edu') {
-                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-emerald-500 text-white shadow-lg transform scale-105";
-            } else if (tabId === 'prog-fes') {
-                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-blue-500 text-white shadow-lg transform scale-105";
-            } else {
-                selectedBtn.className = "px-6 py-2 rounded-full font-bold text-sm transition-all bg-amber-500 text-white shadow-lg transform scale-105";
-            }
-        }
+<!-- THEMES -->
+<section id="themes" class="py-20 bg-emerald-950 text-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-300 font-semibold text-sm tracking-wide">04 · 일일 테마 &amp; 오후 이벤트</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black">테마별 수업 + 4개 오후 이벤트</h2>
+        <p class="mt-4 text-emerald-100/80 max-w-3xl">각 날은 아동 친화적 테마와 언어 초점, 오후 4개 이벤트로 구성됩니다. 3시간 블록을 반복 게임 하나로 채우지 않고 다양한 경쟁으로 운영합니다.</p>
 
-        function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            const modalContent = modal.querySelector('div');
-            modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
-            }, 10);
-            document.body.style.overflow = 'hidden';
-        }
+        <div class="mt-10 space-y-4">
+            <!-- day cards -->
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10" open>
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-emerald-400 text-emerald-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 1</span>
+                    <span class="font-bold text-lg">캠프에 오신 것을 환영합니다!</span>
+                    <span class="text-emerald-200/80 text-sm">인사 · 자기소개</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 팀명 &amp; 깃발 디자인 콘테스트 (창의성 점수)</p>
+                    <p>2. 아이스브레이커 계주</p>
+                    <p>3. 휴먼 노트 신뢰 챌린지</p>
+                    <p>4. 입문 깃발뺏기 (Capture-the-Flag)</p>
+                </div>
+            </details>
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10">
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-emerald-400 text-emerald-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 2</span>
+                    <span class="font-bold text-lg">동식물과 자연</span>
+                    <span class="text-emerald-200/80 text-sm">동물 어휘 · 소리</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 동물 제스처 계주 (Charades)</p>
+                    <p>2. 정글 크롤 장애물 코스</p>
+                    <p>3. 동물 소리 보물찾기</p>
+                    <p>4. 포식자·피식자 태그 토너먼트</p>
+                </div>
+            </details>
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10">
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-emerald-400 text-emerald-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 3</span>
+                    <span class="font-bold text-lg">슈퍼히어로</span>
+                    <span class="text-emerald-200/80 text-sm">동작 동사 · can/can't</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 히어로 트레이닝 부트캠프 (장애물)</p>
+                    <p>2. ‘도시 구하기’ 구조 계주</p>
+                    <p>3. 빌런 피구 토너먼트</p>
+                    <p>4. 슈퍼파워 퀴즈 쇼다운 (영어 복습)</p>
+                </div>
+            </details>
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10">
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-emerald-400 text-emerald-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 4</span>
+                    <span class="font-bold text-lg">해적과 보물찾기</span>
+                    <span class="text-emerald-200/80 text-sm">방향 · 전치사</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 보물지도 스캐빈저 헌트</p>
+                    <p>2. 널판 걷기 (Walk-the-Plank) 균형 계주</p>
+                    <p>3. 해적선 줄다리기</p>
+                    <p>4. 보물 쟁탈 팀 배틀</p>
+                </div>
+            </details>
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10">
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-emerald-400 text-emerald-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 5</span>
+                    <span class="font-bold text-lg">여행과 탐험</span>
+                    <span class="text-emerald-200/80 text-sm">장소 · 교통수단</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 여권 퀴즈 챌린지 (영어 복습)</p>
+                    <p>2. 세계일주 스테이션 계주</p>
+                    <p>3. 나침반·지도 오리엔티어링</p>
+                    <p>4. 팀 스캐빈저 헌트 피날레</p>
+                </div>
+            </details>
+            <details class="group rounded-2xl bg-white/5 border border-white/10 open:bg-white/10">
+                <summary class="cursor-pointer list-none px-5 py-4 flex flex-wrap items-center gap-3">
+                    <span class="bg-amber-300 text-amber-950 text-xs font-black px-2.5 py-1 rounded-md">DAY 6</span>
+                    <span class="font-bold text-lg">챔피언십 결승 &amp; 시상의 날</span>
+                    <span class="text-emerald-200/80 text-sm">주간 어휘 누적 복습</span>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-emerald-50/90 space-y-1.5 border-t border-white/10 pt-4">
+                    <p>1. 클로징 미니올림픽 챔피언십 (주간 베스트 이벤트 재경기)</p>
+                    <p>2. 팀 대 팀 챔피언십 계주</p>
+                    <p>3. 최종 점수판 공개</p>
+                    <p>4. 시상식 · 수료증 · 팀 사진</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
 
-        function closeModal(event, modalId) {
-            if (event && !event.target.closest('.modal-bg')) return;
-            const modal = document.getElementById(modalId);
-            const modalContent = modal.querySelector('div');
-            modal.classList.add('opacity-0');
-            modalContent.classList.remove('scale-100');
-            modalContent.classList.add('scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }, 300);
-        }
+<!-- MATERIALS -->
+<section id="materials" class="py-20 bg-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">05 · 일별 필요 자재</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">오전 교재 · 오후 장비</h2>
+        <p class="mt-4 text-slate-600">상세 활동 설명과 함께 운영 준비에 필요한 자재 목록입니다. (단가·예산은 별도 협의)</p>
 
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('navbar');
-            const navLinks = document.getElementById('nav-links');
-            const logoImg = document.getElementById('logo-img');
+        <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+            <table class="doc w-full text-sm min-w-[640px] bg-white">
+                <thead>
+                    <tr>
+                        <th class="text-left w-16">일차</th>
+                        <th class="text-left">오전 수업 자재</th>
+                        <th class="text-left">오후 이벤트 자재</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-700">
+                    <tr>
+                        <td class="font-bold">1</td>
+                        <td>이름표, 환영·인사 플래시카드, 출석표</td>
+                        <td>포스터지·마카, 콘·계주봉, 조끼/깃발</td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                        <td class="font-bold">2</td>
+                        <td>동물 플래시카드, 동물 소리 오디오, 워크시트</td>
+                        <td>제스처 카드, 콘·매트·후프, 숨김용 그림 카드, 태그 밴드</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">3</td>
+                        <td>히어로 어휘 카드, 만화형 워크시트</td>
+                        <td>콘·매트·터널, 빈백·구조 매트, 폼 피구공, 퀴즈 보드</td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                        <td class="font-bold">4</td>
+                        <td>해적 어휘 카드, 보물지도 워크시트</td>
+                        <td>인쇄 지도·단서, 균형선 테이프·빈백, 줄다리기 로프, 보물 토큰</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold">5</td>
+                        <td>교통수단 플래시카드, 여권 워크시트</td>
+                        <td>여권 북렛·스탬프, 스테이션 소품, 나침반·지도 카드, 단서 카드</td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                        <td class="font-bold">6</td>
+                        <td>누적 복습 워크시트, 어휘 복습 게임</td>
+                        <td>이전 일자 장비 재사용, 점수판, 수료증·메달/트로피</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
-            if (window.scrollY > 50) {
-                header.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-                header.classList.remove('bg-transparent');
-                navLinks.classList.remove('text-white/90');
-                navLinks.classList.add('text-slate-600');
-            } else {
-                header.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-                header.classList.add('bg-transparent');
-                navLinks.classList.add('text-white/90');
-                navLinks.classList.remove('text-slate-600');
-            }
-        });
-    </script>
+<!-- STAFFING & SAFETY -->
+<section id="staffing" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">06 · 인력 · 안전 · 위기관리</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">공공기관 제출용 운영 체계</h2>
+        <p class="mt-4 text-slate-600">오후 미니올림픽은 신체 접촉이 잦은 활동이 포함되므로, 인력·보험·후송 체계를 사전에 명시합니다. (세부 인건비·보험료는 별도 산출 협의)</p>
+
+        <div class="mt-10 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="doc w-full text-sm min-w-[560px]">
+                <thead>
+                    <tr>
+                        <th class="text-left">역할</th>
+                        <th class="text-left">권장 배치</th>
+                        <th class="text-left">주요 책임</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-700">
+                    <tr>
+                        <td class="font-semibold">원어민 영어교사</td>
+                        <td>2명 (오전 분반)</td>
+                        <td>테마 수업, 말하기·듣기 지도, 오후 영어 연계 미션 지원</td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                        <td class="font-semibold">캠프 코디네이터 / 총괄</td>
+                        <td>1명</td>
+                        <td>일정·안전·점수판·보호자 커뮤니케이션 총괄</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold">팀 리더 / 활동 보조</td>
+                        <td>4명 (팀당 1명)</td>
+                        <td>팀 인솔, 오후 이벤트 운영 보조, 안전 관찰</td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                        <td class="font-semibold">응급처치 인력</td>
+                        <td>1명 (상주)</td>
+                        <td>부상·응급 초기 대응, 후송 연계, 투약·알레르기 확인 지원</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-3 gap-4">
+            <div class="rounded-2xl border border-amber-200 bg-amber-50 p-5">
+                <h3 class="font-bold text-amber-950 flex items-center gap-2"><i data-lucide="shield" class="w-5 h-5"></i> 보험</h3>
+                <ul class="mt-3 text-sm text-amber-950/80 space-y-2 list-disc pl-4">
+                    <li>참가자 상해보험 가입</li>
+                    <li>행사 주최자 배상책임보험 가입</li>
+                    <li>가입 증명서 대관·시청 제출용 보관</li>
+                </ul>
+            </div>
+            <div class="rounded-2xl border border-rose-200 bg-rose-50 p-5">
+                <h3 class="font-bold text-rose-950 flex items-center gap-2"><i data-lucide="ambulance" class="w-5 h-5"></i> 후송 체계</h3>
+                <ul class="mt-3 text-sm text-rose-950/80 space-y-2 list-disc pl-4">
+                    <li>인근 지정 협력병원 사전 안내</li>
+                    <li>보호자 비상연락망 상시 확보</li>
+                    <li>중대 부상 시 119·보호자 동시 통보</li>
+                </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-5">
+                <h3 class="font-bold text-slate-900 flex items-center gap-2"><i data-lucide="clipboard-list" class="w-5 h-5 text-emerald-600"></i> 현장 안전</h3>
+                <ul class="mt-3 text-sm text-slate-600 space-y-2 list-disc pl-4">
+                    <li>피구는 소프트/폼공만 사용</li>
+                    <li>활동 전 준비운동·규칙 브리핑</li>
+                    <li>워터 브레이크 3회 의무 배정</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ESG -->
+<section id="esg" class="py-20 bg-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">07 · ESG · 디지털</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">지속가능 운영 포인트</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-5">
+            <div class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6">
+                <h3 class="font-bold text-lg">환경 (E)</h3>
+                <ul class="mt-3 text-sm text-slate-600 space-y-2 list-disc pl-5">
+                    <li>오후 워터 브레이크 — <strong>개인 텀블러 지참</strong>, 일회용 컵 미제공</li>
+                    <li>교재 양면인쇄, 불필요 출력 최소화</li>
+                    <li>이벤트 장비 재사용(6일차 챔피언십 등)</li>
+                </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 class="font-bold text-lg">사회·거버넌스 (S·G)</h3>
+                <ul class="mt-3 text-sm text-slate-600 space-y-2 list-disc pl-5">
+                    <li>전원 수료증 지급으로 참여 성취감 보장</li>
+                    <li>팀 고정 편성으로 협동·리더십 경험</li>
+                    <li>누적 점수판 공개로 투명한 경쟁 운영</li>
+                    <li>보호자 안내·동의서·비상연락 문서화</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING -->
+<section class="py-16 bg-emerald-900 text-white">
+    <div class="container mx-auto px-5 md:px-8 max-w-3xl text-center">
+        <h2 class="text-2xl md:text-3xl font-black">태백시와 함께하는 초등 여름영어캠프</h2>
+        <p class="mt-4 text-emerald-100/90 leading-relaxed">
+            본 문서는 프로그램 구성·일정·안전·ESG를 중심으로 한 제안서입니다.
+            세부 예산·인건비 산출은 모집인원·시설 현물지원 여부 확정 후 별도 협의합니다.
+        </p>
+        <p class="mt-6 text-sm text-emerald-200/80">검토에 시간을 내어 주셔서 감사합니다.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-slate-100">
+    <div class="container mx-auto px-5 md:px-8 max-w-5xl">
+        <p class="text-emerald-700 font-semibold text-sm tracking-wide">문의</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-black text-slate-900">Tourmaker 담당자</h2>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="tel:01094437881" class="rounded-2xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition">
+                <div class="text-xs text-slate-500">대표 / 총괄기획</div>
+                <div class="mt-1 font-bold text-lg">이재명</div>
+                <div class="mt-2 text-emerald-700 font-medium text-sm">010-9443-7881</div>
+            </a>
+            <a href="tel:01050660433" class="rounded-2xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition">
+                <div class="text-xs text-slate-500">매니저 / 운영지원</div>
+                <div class="mt-1 font-bold text-lg">허나연</div>
+                <div class="mt-2 text-emerald-700 font-medium text-sm">010-5066-0433</div>
+            </a>
+            <a href="tel:01042494026" class="rounded-2xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition">
+                <div class="text-xs text-slate-500">이사 / 대외협력</div>
+                <div class="mt-1 font-bold text-lg">조혁</div>
+                <div class="mt-2 text-emerald-700 font-medium text-sm">010-4249-4026</div>
+            </a>
+            <a href="tel:01044015007" class="rounded-2xl bg-white border border-slate-200 p-5 hover:border-emerald-300 transition">
+                <div class="text-xs text-slate-500">프로그램 디렉터</div>
+                <div class="mt-1 font-bold text-lg">Andrew Regan</div>
+                <div class="mt-2 text-emerald-700 font-medium text-sm">010-4401-5007</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-900 text-slate-400 py-10">
+    <div class="container mx-auto px-5 md:px-8 flex flex-col md:flex-row justify-between gap-4 text-sm">
+        <div>
+            <div class="text-white font-semibold">Tourmaker</div>
+            <p class="mt-1">태백시 초등 여름영어캠프 프로그램 제안서</p>
+        </div>
+        <div class="md:text-right">
+            <p>© 2026 Tourmaker</p>
+            <p class="mt-1 text-xs">본 페이지에는 예산·단가 정보가 포함되어 있지 않습니다.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const nav = document.getElementById('navbar');
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('nav-scrolled');
+    else nav.classList.remove('nav-scrolled');
+  });
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const open = !mobileMenu.classList.contains('hidden');
+    menuBtn.innerHTML = open ? '<i data-lucide="x" class="w-6 h-6"></i>' : '<i data-lucide="menu" class="w-6 h-6"></i>';
+    if (open) nav.classList.add('nav-scrolled');
+    lucide.createIcons();
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+    lucide.createIcons();
+  }));
+</script>
 </body>
 </html>
